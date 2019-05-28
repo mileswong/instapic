@@ -1,0 +1,19 @@
+.post-form {
+  .ant-form-item {
+    margin-bottom: 8px;
+  }
+
+  &__button--submit {
+    width: 100%;
+  }
+
+  .ant-upload {
+    width: 100% !important;
+
+    img {
+      max-width: 100%;
+
+      cursor: pointer;
+    }
+  }
+}

@@ -20,3 +20,14 @@ export const apiRefreshUser = () => fetch(`${BASE_URL}/users/refresh`, {
   },
   referrer: 'no-referrer',
 });
+
+// post api
+export const apiGetAllPosts = () => instance.get('posts');
+export const apiGetUserPosts = (userId) => instance.get(`users/${userId}/posts`);
+export const apiAddUserNewPost = payload => fetch(`${BASE_URL}/posts`, {
+  method: 'POST',
+  mode: 'cors',
+  credentials: 'include',
+  referrer: 'no-referrer',
+  body: payload,
+});
