@@ -4,3 +4,5 @@
 *.log
 
 node_modules
+frontend/tests/e2e/reports
+frontend/reports

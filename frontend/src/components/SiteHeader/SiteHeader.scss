@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.site-header-wrapper {
+  border-bottom: 1px solid $light-gray;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-menu {
+    border-bottom: none;
+  }
+
+  .ant-menu-submenu-title a {
+    color: rgba(0, 0, 0, .75);
+  }
+}
