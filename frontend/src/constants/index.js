@@ -1,7 +1,7 @@
 export const IS_DEV = process.env.NODE_ENV !== 'production';
 export const BASE_URL = IS_DEV
   ? 'http://localhost:8000/v1'
-  : '';
+  : 'https://instapic-miles.herokuapp.com/v1';
 
 
 export const VALID_FILE_TYPE_SET = new Set(['image/jpeg', 'image/png', 'image/jpg']);
